@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Aristocrat" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.Aristocrat" parent="Base.Theme.Aristocrat" />
+
+    <style name="ProgressBarTheme" parent="Theme.Aristocrat">
+        <item name="colorAccent">#FFF</item>
+    </style>
+</resources>

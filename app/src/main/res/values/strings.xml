@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aristocrat</string>
+    <string name="loading_text">LOADING…</string>
+    <string name="open_play_slots_description">Open play slots</string>
+    <string name="open_play_roulette_description">Open play roulette</string>
+    <string name="open_privacy_policy_description">Open privacy policy</string>
+    <string name="default_balance_text">BALANCE: 0</string>
+    <string name="default_last_win_text">LAST WIN: 0</string>
+    <string name="balance_text">BALANCE: %d</string>
+    <string name="last_win_text">LAST WIN: %d</string>
+    <string name="privacy_policy_title_text">PRIVACY POLICY</string>
+    <string name="privacy_policy_text">text</string>
+    <string name="back_to_menu_description">Back to menu</string>
+    <string name="set_bet">SET BET:</string>
+    <string name="bet10">10</string>
+    <string name="slots_title_text">SLOTS</string>
+    <string name="bet25">25</string>
+    <string name="bet50">50</string>
+    <string name="roulette_title_text">ROULETTE</string>
+    <string name="bet100">100</string>
+</resources>

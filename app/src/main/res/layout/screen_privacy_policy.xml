@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_background"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/backToMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/back_to_menu_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_back_button" />
+
+    <TextView
+        android:id="@+id/screenTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_text_background"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:textSize="16sp"
+        android:text="@string/privacy_policy_title_text"
+        app:layout_constraintBottom_toBottomOf="@+id/backToMenu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backToMenu" />
+
+    <TextView
+        android:id="@+id/privacyPolicyText"
+        android:layout_width="0dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:padding="24dp"
+        android:text="@string/privacy_policy_text"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/main_text_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backToMenu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

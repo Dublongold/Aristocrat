@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/screenLoading">
+    <fragment
+        android:id="@+id/screenLoading"
+        android:name="com.game.aristocrat.screens.loading.ScreenLoading"
+        android:label="ScreenLoading" >
+        <action
+            android:id="@+id/openMenu"
+            app:destination="@id/screenMenu"
+            app:popUpTo="@id/screenLoading"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/screenMenu"
+        android:name="com.game.aristocrat.screens.menu.ScreenMenu"
+        android:label="ScreenMenu">
+        <action
+            android:id="@+id/openPrivacyPolicy"
+            app:destination="@id/privacyPolicy" />
+        <action
+            android:id="@+id/openSlots"
+            app:destination="@id/screenSlots" />
+        <action
+            android:id="@+id/openRoulette"
+            app:destination="@id/screenRolette" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyPolicy"
+        android:name="com.game.aristocrat.screens.privacyPolicy.ScreenPrivacyPolicy"
+        android:label="PrivacyPolicy" />
+    <fragment
+        android:id="@+id/screenSlots"
+        android:name="com.game.aristocrat.screens.slots.ScreenSlots"
+        android:label="ScreenSlots" />
+    <fragment
+        android:id="@+id/screenRolette"
+        android:name="com.game.aristocrat.screens.rolette.ScreenRoulette"
+        android:label="ScreenRolette" />
+</navigation>

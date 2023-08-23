@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_background"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/openSlotsButton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/open_play_slots_description"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/play_slots" />
+
+        <ImageButton
+            android:id="@+id/openRouletteButton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/open_play_roulette_description"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/play_roulettepng" />
+
+        <ImageButton
+            android:id="@+id/openPrivacyPolicyButton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/open_privacy_policy_description"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/privacy_policy" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/balanceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:background="@drawable/main_text_background"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:text="@string/default_balance_text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="BALANCE: 1271874" />
+</androidx.constraintlayout.widget.ConstraintLayout>
