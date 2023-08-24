@@ -1,10 +1,10 @@
 package com.game.aristocrat.screens.main
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.game.aristocrat.R
 import com.game.aristocrat.helpful.BalanceManager
@@ -36,9 +36,9 @@ class MainActivity : AppCompatActivity() {
                 i.putExtra("url", url)
                 startActivity(i)
             }
-            url.also {
-                if(it != "" && it.contains("http")) {
-                    startWebIntent(it)
+            url.also { u ->
+                if(u != "" && u.contains("http")) {
+                    startWebIntent(u)
                 }
                 else {
                     var result = GetGistData().getGistData()
