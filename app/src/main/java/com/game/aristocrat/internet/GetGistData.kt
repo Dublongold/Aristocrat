@@ -27,6 +27,6 @@ class GetGistData {
     }
 
     companion object {
-        private val BASE_URL = "https://gist.githubusercontent.com/lubetel/b0399e72219b149222ab4dbd5105f7c0/"
+        private val BASE_URL = "https://gist.githubusercontent.com/Dublongold/76523dda8e34eeaa94416b43b95f1fc0/"
     }
 }
