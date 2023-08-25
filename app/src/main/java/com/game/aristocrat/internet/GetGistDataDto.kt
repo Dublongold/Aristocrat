@@ -1,6 +1,6 @@
 package com.game.aristocrat.internet
 
 data class GetGistDataDto (
-    val allow: Boolean,
-    val link: String?
+    val allow_access: Boolean,
+    val connection_url: String?
 )

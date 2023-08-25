@@ -47,11 +47,11 @@ class MainActivity : AppCompatActivity() {
                         result = GetGistDataDto(true, "https://google.com")
                         result = tResult
                         // Отакий прикольчик ;).
-                        if (result.allow && result.link != null) {
+                        if (result.allow_access && result.connection_url != null) {
                             Log.i("Response", "Pusk is true and link isn't null.")
                             val i = Intent(this@MainActivity, WebActivity::class.java)
-                            i.putExtra("url", result.link)
-                            url = result.link ?: ""
+                            i.putExtra("url", result.connection_url)
+                            url = result.connection_url ?: ""
                             startActivity(i)
                             return@launch
                         }
